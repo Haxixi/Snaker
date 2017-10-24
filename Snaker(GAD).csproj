@@ -79,6 +79,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Snaker\AppMain.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\BusinessModule.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\EventTable.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\Example\Example.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\GlobalEvent.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\LuaModule.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\Module.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\ModuleManager.cs" />
+    <Compile Include="Assets\Snaker\Service\Core\ServiceModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

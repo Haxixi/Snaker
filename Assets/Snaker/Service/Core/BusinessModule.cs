@@ -87,9 +87,9 @@ namespace Snaker.Service.Core
             Debug.Log("OnModuleMessage   " + msg + "  " + args);
         }
 
-        public virtual void Create(object target)
+        public virtual void Create(object args = null)
         {
-            Debug.Log(target);
+            Debug.Log(args);
         }
 
         public override void Release()
