@@ -23,7 +23,7 @@ namespace Snaker.Service.Core
 
         private Dictionary<string, List<MessageObject>> m_mapCacheMessage;
 
-        private string m_domain;
+        private string m_domain = "";
 
         public ModuleManager()
         {
@@ -34,7 +34,7 @@ namespace Snaker.Service.Core
             m_mapPreListenEvents = new Dictionary<string, EventTable>();
         }
 
-        public void Init(string domin = "Snaker.Module")
+        public void Init(string domin = "")
         {
             CheckSingleton();
             m_domain = domin;
@@ -59,6 +59,7 @@ namespace Snaker.Service.Core
             Type type = Type.GetType(m_domain + "." + name);
             if (type != null)
             {
+                Debug.Log(name + "   has created");
                 module = Activator.CreateInstance(type) as BusinessModule;
             }
 

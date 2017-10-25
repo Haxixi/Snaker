@@ -7,7 +7,7 @@ using UnityEngine.Events;
 namespace Snaker.Service.Core
 {
 
-    public class ModuleEvent : UnityEvent<Object>
+    public class ModuleEvent : UnityEvent<object>
     {
 
     }

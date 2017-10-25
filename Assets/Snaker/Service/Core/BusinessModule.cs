@@ -84,12 +84,12 @@ namespace Snaker.Service.Core
 
         protected virtual void OnModuleMessage(string msg, object[] args)
         {
-            Debug.Log("OnModuleMessage   " + msg + "  " + args);
+            Debug.Log("没有通过反射获取到函数名字" + msg);
         }
 
         public virtual void Create(object args = null)
         {
-            Debug.Log(args);
+            //Debug.Log(args);
         }
 
         public override void Release()

@@ -11,17 +11,10 @@ namespace Snaker.Service.Core
         public static ModuleEvent<bool> onLogin = new ModuleEvent<bool>();
         public static ModuleEvent<bool> onPay = new ModuleEvent<bool>();
 
-        //public static void Foo()
-        //{
-        //    GlobaleEvent.onLogin.Invoke(true);
-
-        //    GlobaleEvent.onLogin.AddListener(OnLogin);
-        //}
-
-        //private static void OnLogin(bool args)
-        //{
-
-        //}
+        public static void Foo()
+        {
+            onLogin.Invoke(true);
+        }
     }
 
 }
