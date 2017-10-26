@@ -87,6 +87,8 @@
     <Compile Include="Assets\Snaker\Service\Core\Module.cs" />
     <Compile Include="Assets\Snaker\Service\Core\ModuleManager.cs" />
     <Compile Include="Assets\Snaker\Service\Core\ServiceModule.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\UIPage.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\UIPanel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
