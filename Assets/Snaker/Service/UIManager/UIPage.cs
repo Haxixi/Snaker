@@ -17,7 +17,7 @@ namespace Snaker.Service.UIManager
 
         protected void OnEnable()
         {
-            Debug.Log("OnEnable  ");
+            Debug.Log(this.GetType().Name + "  OnEnable  ");
 
             if (m_btnGoBack != null)
                 m_btnGoBack.onClick.AddListener(OnBtnGoBack);
@@ -28,9 +28,9 @@ namespace Snaker.Service.UIManager
 #endif
         }
 
-        protected void OnDisable()
+        protected void OnDisable() 
         {
-            Debug.Log("OnDisable  ");
+            Debug.Log(this.GetType().Name + "  OnDisable  ");
 
 #if UNITY_EDITOR
             if (m_isOpenedOnce)
@@ -43,13 +43,13 @@ namespace Snaker.Service.UIManager
 
         private void OnBtnGoBack()
         {
-            Debug.Log("OnBtnGoBack  ");
+            Debug.Log(this.GetType().Name + "  OnBtnGoBack  ");
             UIManager.Instance.GoBackPage();
         }
 
         public sealed override void Open(object args = null)
         {
-            Debug.Log("Override Open  ");
+            Debug.Log(this.GetType().Name + "  Override Open  ");
             m_openArgs = args;
             m_isOpenedOnce = false;
 
@@ -62,7 +62,7 @@ namespace Snaker.Service.UIManager
 
         public sealed override void Close()
         {
-            Debug.Log("Override Close  ");
+            Debug.Log(this.GetType().Name + "  Override Close  ");
             if(this.gameObject.activeSelf)
                 this.gameObject.SetActive(false);
 
