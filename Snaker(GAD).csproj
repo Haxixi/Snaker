@@ -76,6 +76,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>Assets\Foundation\protobuf-net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Snaker\AppMain.cs" />
@@ -87,6 +90,10 @@
     <Compile Include="Assets\Snaker\Service\Core\Module.cs" />
     <Compile Include="Assets\Snaker\Service\Core\ModuleManager.cs" />
     <Compile Include="Assets\Snaker\Service\Core\ServiceModule.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\Example\Example.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\Example\UIPage1.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\Example\UIPage2.cs" />
+    <Compile Include="Assets\Snaker\Service\UIManager\Example\UIWnd1.cs" />
     <Compile Include="Assets\Snaker\Service\UIManager\UIManager.cs" />
     <Compile Include="Assets\Snaker\Service\UIManager\UIPage.cs" />
     <Compile Include="Assets\Snaker\Service\UIManager\UIPanel.cs" />

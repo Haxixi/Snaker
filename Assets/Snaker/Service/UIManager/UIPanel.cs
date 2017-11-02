@@ -6,6 +6,12 @@ namespace Snaker.Service.UIManager
 {
     public abstract class UIPanel : MonoBehaviour
     {
+
+        void Start()
+        {
+            Init();
+        }
+
         /// <summary>
         /// UI框架逻辑，区分UI业务逻辑
         /// </summary>
@@ -37,6 +43,11 @@ namespace Snaker.Service.UIManager
         protected virtual void OnOpen(object args = null)
         {
             Debug.Log(this.GetType().Name + "  OnOpen  " + args);
+        }
+
+        protected virtual void Init()
+        {
+            
         }
     }
 }
